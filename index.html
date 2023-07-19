@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JackCasino</title>
+  <link rel="stylesheet" href="CasinoLandingPage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;1000&family=Poppins&display=swap" rel="stylesheet">
+<link rel="icon" href="casinologo.svg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="menu-and-logo" style="padding-left: 10px;">
+    <div class="logo">
+      <a href="#" style="text-decoration: none;"><h2 style=" color: #fff; display: flex; align-items: center; margin-left: 10px; margin-top: 11%; font-size:25px;">Jack <img src="casinologo.svg" alt="Jack Casino Logo" style="max-width: 40px; margin-top: 0px;">Casino</h2></a>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+    </nav>
+    <nav class="signup-and-log-in">
+        <ul>
+            <li><a href="">Log In</a></li>
+            <li><a href="#" class="signup-button" style="margin-top: 20px;">Sign Up</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <!--
+    <img src="casinologo.svg" alt="Jack Casino Logo" style="max-width: 150px;">
+    <h1>Welcome to Jack Casino</h1>
+    <h2>Double down or get your money back. Take advantage of your welcome bonus now</h2>
+    <a href="#" class="cta-button" style="margin-top: 20px;">Sign Up Now</a>
+    -->
+
+  </header>
+
+<!--
+  <section class="slideshow-container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img id="sliderimg1" src="landing-sliderimg1.webp"alt="">
+            <img id="sliderimg2" src="landing-sliderimg2.webp" alt="">
+            <img id="sliderimg3" src="landing-sliderimg3.webp" alt="">
+            <img id="sliderimg4" src="landing-sliderimg4.webp" alt="">
+        </div>
+        <div class="slider-nav">
+            <a href="#sliderimg1"></a>
+            <a href="#sliderimg2"></a>
+            <a href="#sliderimg3"></a>
+            <a href="#sliderimg4"></a>
+        </div>
+    </div>
+  </section>
+  -->
+  <div class="overlay">
+    <span style="color: #fdac2a;">DROPS & WINS</span>
+   <br>UP TO €3,500,000
+    <br>IN CASH PRIZES <br>
+    <a href="#" class="cta-button" style="margin-top: 20px;">SIGN UP NOW</a>
+  </div>
+
+  <div class="slider">
+    <div class="slider-container">
+      <div class="slide">
+        <div class="image-container">
+          <img src="landing-sliderimg3.webp" alt="Image 1">
+          <div class="overlay">
+            <span style="color: #fdac2a;">WELCOME BONUS</span>
+            <br>5% Cashback
+            <br>+150 Free Spins <br> 
+            <a href="#" class="cta-button" style="margin-top: 20px;">DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image-container">
+          <img src="landing-sliderimg2.webp" alt="Image 2">
+          <div class="overlay">
+            <span style="color: #fdac2a;">SUMMER BOOST</span>
+            <br>15% BONUS ON DEPOSITS 
+            <br>UNTIL SEP 1 <br> 
+            <a href="#" class="cta-button" style="margin-top: 20px;">LET'S GO!</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image-container">
+          <img src="landing-sliderimg1.webp" alt="Image 3">
+          <div class="overlay">
+            <span style="color: #fdac2a;">DROPS & WINS</span>
+           <br>UP TO €3,500,000
+            <br>IN CASH PRIZES <br>
+            <a href="#" class="cta-button" style="margin-top: 20px;">SIGN UP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image-container">
+          <img src="landing-sliderimg4.webp" alt="Image 4">
+          <div class="overlay">
+            <span style="color: #fdac2a;">WELCOME BONUS</span>
+            <br>5% Cashback
+            <br>+150 Free Spins  <br>
+            <a href="#" class="cta-button" style="margin-top: 20px;">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dots-container">
+    <div class="dot active" onclick="handleDotClick(0)"></div>
+    <div class="dot" onclick="handleDotClick(1)"></div>
+    <div class="dot" onclick="handleDotClick(2)"></div>
+    <div class="dot" onclick="handleDotClick(3)"></div>
+  </div>
+  
+  <section class="games-section">
+    <div class="games-header">POPULAR GAMES</div>
+    <div class="games-container">
+      <div class="game-image">
+        <img src="https://cdn.aramuz.net/images/game/uploads/softswiss.thunderkick-MidasGoldenTouch_tk.jpg" alt="">
+      </div>
+      <div class="game-image">
+        <img src="https://cdn.aramuz.net/images/game/uploads/softswiss.zillion-GoldenDragon.png" alt="">
+      </div>
+      <div class="game-image">
+        <img src="https://cdn.aramuz.net/images/game/uploads/softswiss.onlyplay-HotandSpicyJackpot.jpg" alt="">
+      </div>
+      <div class="game-image">
+        <img src="https://cdn.aramuz.net/images/game/uploads/belatra.book.jpg" alt="">
+      </div>
+      <div class="game-image">
+        <img src="https://cdn.aramuz.net/images/game/uploads/platipus.bookofegypt-465.jpg" alt="">
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="#" class="cta-button" style="margin-top: 20px;">Play +3000 Games</a>
+    </div>
+  </section>
+  
+  
+
+
+  <section class="gamification-loyalty section-background">
+            <div class="gridify-content">
+                <div class="grid-item">
+                    <h1>Unleash the Excitement and Thrill of Winning at Jack Casino! </h1>
+                    <h4>
+                    Are you ready to embark on an unforgettable journey into the world of online gambling? Look no further! <br><br>At Jack Casino, we bring you an unparalleled gaming experience that will leave you breathless with anticipation and thrilled with every spin, roll of the dice, and deal of the cards. <br><br>Get ready to immerse yourself in the electrifying atmosphere of our virtual casino, where the action never stops and big wins await!
+                    <br><br>Join us today and discover a world of excitement, endless entertainment, and the chance to win fantastic rewards, all from the comfort of your own home!
+                    </h4>
+                </div>
+                <div class="grid-item">
+                    <img src="casinoslotmachine.png" alt="An image slot machine">
+                </div>
+            </div>
+    <h3>Realtime Gamification and Loyalty Suite</h3>
+    <h4>Realtime Gamification and Loyalty Suite. Complete tasks, gain levels and spend points in the store</h4>
+    <div class="gridify-content">
+    <div class="feature">
+      <img src="crown-logo.svg" alt="Missions and store">
+      <h4>Missions and Store</h4>
+      <p>Complete tasks, gain levels, and spend points in the store.</p>
+    </div>
+    <div class="feature">
+      <img src="wheel.svg" alt="Wheel of Fortune">
+      <h4>Wheel of Fortune</h4>
+      <p>Spin the wheel of fortune and win valuable prizes.</p>
+    </div>
+    <div class="feature">
+      <img src="cup.svg" alt="Tournaments">
+      <h4>Tournaments</h4>
+      <p>Participate in tournaments and win extra money and Free Spins.</p>
+    </div>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="#" class="cta-button">Let's Go!</a>
+</div>
+  </section>
+  
+
+  <section class="featured-games">
+    <h3>Featured Games</h3>
+    <div class="gridify-content">
+        <div class="game section-content">
+            <div class="game-grid-item"><img src="megaspin.png" alt="Mega Spin Mania"></div>
+            <div class="game-grid-item">
+                <div class="game-grid-text">
+                    <h4>Mega Spin Mania</h4>
+                    <p>Spin the reels with Slotman and unlock superhero-sized winnings!</p>
+                </div>
+            </div>
+        </div>
+        <div class="game section-content">
+            <div class="game-grid-item"><img src="premiumroulette.png" alt="Heroic Roulette"></div>
+            <div class="game-grid-item">
+                <div class="game-grid-text">
+                    <h4>Heroic Roulette</h4>
+                    <p>Bet on your lucky numbers and feel the rush of the heroic wheel!</p>
+                </div>
+            </div>
+        </div>
+        <div class="game section-content">
+            <div class="game-grid-item"><img src="superblackjack-nobg.png" alt="Super Blackjack"></div>
+            <div class="game-grid-item">
+                <div class="game-grid-text">
+                    <h4>Super Blackjack</h4>
+                    <p>Harness your strategic powers and outplay the dealer in this thrilling card battle!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="super-bonuses section-background">
+    <h3>Super Bonuses</h3>
+    <div class="gridify-content">
+        <div class="bonus section-content">
+            <div class="game-grid-item"><img src="welcomebonus-nog.png" alt="Welcome Package"></div>
+            <div class="game-grid-item">
+                <div class="game-grid-text">
+                    <h4>Welcome Package</h4>
+                    <p>Start your heroic journey with a massive $1,000 bonus + 100 free spins!</p>
+                </div>
+            </div>
+        </div>
+        <div class="bonus section-content">
+            <div class="game-grid-item"><img src="power_up_symbol.png" alt="Power-Up Reloads"></div>
+            <div class="game-grid-item">
+                <div class="game-grid-text">
+                    <h4>Power-Up Reloads</h4>
+                    <p>Level up your gameplay with weekly reload bonuses and power your way to victory!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="jackpot">
+     <div class="gridify-content">
+        <img src="jackpot.png" alt="Jackpot">
+        <h4>Total Jackpot: <br> <span class="jackpot-amount">€2,694,020</span></h4>
+     </div>
+  </section>
+
+  <section class="why-casino section-background">
+    <h3 style="text-align: center; margin-bottom: 20px; font-size: 24px;">Why Nine Casino?</h3>
+    <div class="gridify-content">
+        <div class="why-point">
+            <img src="diamond.svg" alt="">
+            <h4>3000+ Games:</h4>
+            <p>Explore a vast library of games that cater to all tastes. From classics like blackjack and roulette to thrilling slots and live dealer games, we have it all. Discover new favorites with cutting-edge graphics to suit your style
+            </p>
+        </div>
+        <div class="why-point">
+            <img src="moneylogo.svg" alt="">
+            <h4>Amazing Bonuses:</h4>
+            <p>As a valued Nine Casino member, enjoy exclusive promotions and bonuses. From welcome offers to weekly promotions and VIP rewards, we prioritize rewarding players to maximize winning chances.
+            </p>
+        </div>
+        <div class="why-point">
+            <img src="securitylogo.svg" alt="">
+            <h4>Unrivaled security:</h4>
+            <p>Ensuring your safety is our top priority. Our online casino employs advanced security measures to guarantee fair and unbiased outcomes, providing you with a secure and trustworthy gaming experience.
+            </p>
+        </div>
+        <div class="why-point">
+            <img src="supportlogo.svg" alt="">
+            <h4>24/7 Support:</h4>
+            <p>Exceptional customer service is our focus. Our 24/7 support team is here to assist with gameplay, accounts, and technical issues. Count on us for prompt and friendly support.
+            </p>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="#" class="cta-button" style="margin-top: 20px;">Sign Up Now</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h3>Testimonials</h3>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"Slotman Casino is hands down the best online casino I've ever played at. The superhero theme adds an extra layer of excitement, and the games are top-notch. <br><br> I've had some incredible wins here, and the customer support is always friendly and helpful. <br><br> Highly recommended!"</p>
+      </div>
+      <div class="testimonial">
+        <p>"I've been a loyal player at Slotman Casino for months, and I can't get enough. The game selection is vast, with something for everyone. <br><br> The bonuses and promotions are generous, and the VIP club makes me feel like a true superhero. <br><br> If you're looking for an exceptional online casino experience, this is the place to be."</p>
+      </div>
+      <div class="testimonial">
+        <p>"I stumbled upon Slotman Casino and decided to give it a try. I was blown away by the graphics, user-friendly interface, and smooth gameplay. <br><br> Not only did I have a blast playing the games, but I also managed to hit a big jackpot! <br><br> I'm now a loyal fan of Slotman Casino, and I can't wait to see what other adventures await me."</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="section-background">
+    <div class="footer-column">
+      <h3>GAMES</h3>
+      <ul>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">POPULAR</a></li>
+        <li><a href="#">SLOTS</a></li>
+        <li><a href="#">JACKPOT GAMES</a></li>
+        <li><a href="#">TABLE</a></li>
+        <li><a href="#">LIVE</a></li>
+        <li><a href="#">OTHERS</a></li>
+        <li><a href="#">BITCOIN GAMES</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>HELP</h3>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="#">CRYPTO</a></li>
+        <li><a href="#">RESPONSIBLE GAMING</a></li>
+        <li><a href="#">APP</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>INFO</h3>
+      <ul>
+        <li><a href="#">PROMOTIONS</a></li>
+        <li><a href="#">PAYMENTS</a></li>
+        <li><a href="#">TERMS AND CONDITIONS</a></li>
+        <li><a href="#">TOURNAMENTS</a></li>
+        <li><a href="#">VIP</a></li>
+        <li><a href="#">GENERAL BONUS POLICY</a></li>
+        <li><a href="#">AFFILIATES</a></li>
+        <li><a href="#">BLOG</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>LANGUAGES</h3>
+      <div class="footer-subcolumn">
+        <ul>
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">DEU</a></li>
+          <li><a href="#">CAN</a></li>
+          <li><a href="#">POL</a></li>
+          <li><a href="#">ESP</a></li>
+          <li><a href="#">NOR</a></li>
+          <li><a href="#">RUS</a></li>
+          <li><a href="#">ROM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>FOLLOW US</h3>
+      <ul>
+        <li><a href="#">FACEBOOK</a></li>
+        <li><a href="#">TWITTER</a></li>
+        <li><a href="#">INSTAGRAM</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+<script src="CasinoLandingPage.js"></script>
+</html>

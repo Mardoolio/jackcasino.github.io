@@ -1,0 +1,469 @@
+body {
+    font-family: 'Nunito Sans', 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(6, 13, 40);
+    color: #fff;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+ 
+  
+  header {
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    background-color: #2D3C61;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 10vh;
+  }
+  .menu-and-logo {
+    display: flex;
+    padding: 0px 20px;
+  }
+
+  .logo{
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+
+  .logo img {
+    max-width: 350px;
+  }
+
+  .navbar ul{
+    list-style: none;
+    color: #fff;
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .signup-and-log-in{
+    margin-left: auto;
+  }
+  .signup-and-log-in ul {
+    list-style: none;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin-top: 17px;;
+    display: flex;
+    justify-content: flex-end; /* Align list items to the right */
+  }
+
+  .navbar ul li, .signup-and-log-in ul li{
+    margin: 11px 25px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #aaa;
+  }
+
+  .signup-and-log-in ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .navbar ul li a:hover{
+    text-decoration: none;
+    color: #ddd;
+  }
+  /*
+  .slideshow-container{
+    padding: 0rem;
+    margin-top: 0;
+  }
+  .slider-wrapper{
+    position: relative;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .slider{
+    display: flex;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3 rem -075rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+  }
+  .slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  .slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  .slider-nav a:hover{
+    opacity: 1;
+  }
+  */
+  .slider {
+    margin-top: 100px;
+    width: 100vw;
+    height: auto;
+  }
+  .slider-container {
+    display: flex;
+    width: 400%;
+    height: auto;
+    transition: transform 0.8s ease-in-out;
+  }
+  .slide {
+    flex: 1;
+    width: 100vw;
+    height: auto;
+    padding: 0 1rem;
+  }
+  .slide img {
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+    object-position: 10% 10%;
+    border-radius: 1rem;
+    border: 1px #aaa solid;
+  }
+  .image-container {
+    position: relative;
+    /* Add any other styles you need for the image container */
+  } 
+  .overlay {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 50vw;
+    height: 25vh;
+    align-items: left;
+    color: white; /* Text color */
+    font-size: 2vw;
+    /* Add any other styles you need for the overlay */
+  }
+
+  .dots-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 80px;
+    margin: 5px auto;
+  }
+  
+  .dot {
+    width: 10px;
+    aspect-ratio: 1/1; /* This keeps the width and height equal, making the dot a circle */
+    border-radius: 50%;
+    border: 2px solid #aaa; /* Border color for hollow dots */
+    cursor: pointer;
+  }
+  .active {
+    border: 2px solid #fff; /* Border color for hollow dots */
+    background-color: #fff;
+  }
+
+  .games-section {
+    text-align: center;
+    padding: 20px 1rem;
+  }
+  
+  .games-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .games-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .game-image {
+    width: 180px;
+    height: 180px;
+    background-color: #f0f0f0; /* Plceholder background color */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #aaa;
+  }
+  .game-image img{
+    width: 100%;
+    height: 100%;
+  }
+  .game-image img:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    z-index: 0;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #888;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 20px 60px;
+    background-color: #ff501b;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 100px;
+  }
+  .signup-button {
+    padding: 5px 20px;
+    background-color: #ff501b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+  }
+
+  .cta-button:hover{
+    transition: background-color 1s ease;
+    background-color: #fc7c3c;
+  }
+
+  .signup-button:hover{
+    transition: background-color 1s ease;
+    background-color: #fc7c3c;
+  }
+
+  .text-and-picture-container{
+    display: flex;
+  }
+  .text-and-picture-container img{
+    width: 30%;
+    height: 30%;
+    margin-right: 2%;
+  }
+  
+  .featured-games {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .featured-games h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .game {
+    margin-bottom: 30px;
+  }
+  
+  .game img {
+    max-width: 200px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  .game-grid-item{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .game h4 {
+    font-size: 20px;
+  }
+  
+  .section-background{
+    border-radius: 9px / 8px;
+    margin: 15px;
+    background-color: rgb(22, 30,54);
+    padding: 20px;
+  }
+
+  .super-bonuses {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .super-bonuses h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .gridify-content{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .section-content{
+    max-width: 30vw;
+  }
+
+  
+  .bonus {
+    margin-bottom: 30px;
+  }
+  
+  .bonus img {
+    max-width: 250px;
+    margin-bottom: 10px;
+  }
+  .welcome_bonus img {
+    max-width: 500px;;
+  }
+  
+  .bonus h4 {
+    font-size: 20px;
+  }
+  
+  .testimonials {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .testimonials h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    flex: 1;
+    max-width: 380px;
+    padding: 20px;
+    background-color: rgba(22, 30,54, 0.5);
+    border-radius: 8px;
+  }
+  
+  .testimonial p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+
+  .jackpot{
+    background-color: #000;
+  }
+  .jackpot img{
+    max-width: 400px;
+    position: relative;
+  }
+
+  .jackpot h4{
+    position: relative;
+    left: -200px;
+    top: 70px;
+  }
+  
+  .jackpot-amount{
+    color: orange;
+    font-size: 40px;
+  }
+
+  .why-casino{
+    padding: 50px;
+  }
+  .why-point{
+    padding: 5px;
+    background-color: #112;
+    border-radius: 9px/8px;
+    margin: 0 5px 0 5px;
+  }
+  .why-point img{
+    max-width: 80px;
+    max-height: 80px;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    width: 50%;
+  }
+  .why-point h4, .why-point p, .why-point img{
+    margin: auto;
+  }
+  .why-point p{
+    width: 20vw;
+    font-size: 12px;
+    padding: 0 15px 15px 15px;
+  }
+
+  .why-point h4{
+    text-align: center;
+    font-style: bold;
+    min-height: 50px;
+    font-size: 25px;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    color: #888;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    color: #fff;
+  }
+  
+  
